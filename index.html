@@ -4,13 +4,15 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="icon" href="img/favicon.ico" type="image/x-icon">
   <title>Фитнесс | Главная</title>
 </head>
 <!-- Google Font -->
 <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:400,600,700,800,900&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Oswald:300,400,500,600,700&display=swap" rel="stylesheet">
 <!-- Jquery script -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
 <script src="jquery-ui-1.13.0/jquery-ui.js"></script>
 <!-- Css Styles -->
 <link rel="stylesheet" href="jquery-ui-1.13.0/jquery-ui.css">
@@ -37,7 +39,7 @@
     <div class="container-fluid">
         <div class="logo">
             <a href="./index.html">
-                <img src="" alt="">Иконка
+                <img src="img/logo.png" alt="">
             </a>
         </div>
         <div class="top-social">
@@ -79,7 +81,7 @@
                         <div class="hero-text">
                             <h2>Добро пожаловать к нам!</h2>
                             <h1>Фитнесс & Спорт</h1>
-                            <a href="#" class="primary-btn">Далее</a>
+                            <a href="#feature" class="primary-btn">Далее</a>
                         </div>
                     </div>
                 </div>
@@ -116,7 +118,7 @@
 <!-- Hero End -->
 
 <!-- Feature Section Begin -->
-<section class="feature-section">
+<section id="feature" class="feature-section">
     <div class="container-fluid">
         <div class="row">
             <div class="col-md-4">
@@ -187,30 +189,30 @@
         <div class="row">
             <div class="col-lg-3 col-sm-6">
                 <div class="classes-item set-bg" data-setbg="img/classes/class-1.jpg">
-                    <h4>Crossfit Level 1</h4>
-                    <p>Sufferers around the globe will be happy to hear that there are sleep apnea remedies.</p>
+                    <h4>Кроссфит Level 1</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam, totam..</p>
                     <a href="#" class="primary-btn class-btn">Read More</a>
                 </div>
             </div>
             <div class="col-lg-3 col-sm-6">
                 <div class="classes-item set-bg" data-setbg="img/classes/class-2.jpg">
-                    <h4>BootCamp</h4>
-                    <p>The oil, also called linseed oil, has many industrial uses – it is an important ingredient
+                    <h4>Начальный уровень</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas, in.
                     </p>
                     <a href="#" class="primary-btn class-btn">Read More</a>
                 </div>
             </div>
             <div class="col-lg-3 col-sm-6">
                 <div class="classes-item set-bg" data-setbg="img/classes/class-3.jpg">
-                    <h4>Energy Blast</h4>
-                    <p>It is a very common occurrence like cold or fever depending upon your lifestyle. </p>
+                    <h4>Энергозатратный</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente, doloremque. </p>
                     <a href="#" class="primary-btn class-btn">Read More</a>
                 </div>
             </div>
             <div class="col-lg-3 col-sm-6">
                 <div class="classes-item set-bg" data-setbg="img/classes/class-4.jpg">
-                    <h4>CLASSIC BODY BALANCE</h4>
-                    <p>The procedure is usually a preferred alternative to photorefractive keratectomy,</p>
+                    <h4>Классический баланс <br>для всего тела</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi, aliquam.</p>
                     <a href="#" class="primary-btn class-btn">Read More</a>
                 </div>
             </div>
@@ -225,7 +227,7 @@
         <div class="row">
             <div class="col-lg-12 text-center">
                 <div class="section-title">
-                    <h2>Classtime Table</h2>
+                    <h2>Рассписание занятий</h2>
                 </div>
             </div>
         </div>
@@ -233,7 +235,7 @@
             <div class="col-lg-12">
                 <div class="timetable-controls">
                     <ul>
-                        <li class="active" data-tsfilter="all">all class</li>
+                        <li class="active" data-tsfilter="all">все классы</li>
                         <li data-tsfilter="crossfit">crossfit</li>
                         <li data-tsfilter="lunge">lunge ball</li>
                         <li data-tsfilter="ppsr">ppsr</li>
@@ -248,13 +250,13 @@
                 <thead>
                     <tr>
                         <th></th>
-                        <th>Monday</th>
-                        <th>Tuesday</th>
-                        <th>Wednesday</th>
-                        <th>Thursday</th>
-                        <th>Friday</th>
-                        <th>Saturday</th>
-                        <th>Sunday</th>
+                        <th>Понедельник</th>
+                        <th>Вторник</th>
+                        <th>Среда</th>
+                        <th>Четверг</th>
+                        <th>Пятница</th>
+                        <th>Суббота</th>
+                        <th>Воскресенье</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -534,13 +536,14 @@
             <div class="col-lg-12">
                 <div class="video-text">
                     <h2>Видео обзор</h2>
-                    <a href="https://www.youtube.com/watch?v=X_9VoqR5ojM" class="play-btn video-popup">
+                    <a  href="https://www.youtube.com/watch?v=4dQ2fA7sYEU" class="play-btn video-popup">
                         <i class="fa fa-play"></i>
                     </a>
                 </div>
             </div>
         </div>
     </div>
+
 </section>
 <!-- Video Section End -->
 
@@ -596,7 +599,7 @@
                         <h5>Many people sign up for affiliate programs</h5>
                     </a>
                     <div class="play-btn">
-                        <a href="https://www.youtube.com/watch?v=X_9VoqR5ojM" class="play-in-btn video-popup">
+                        <a href="https://www.youtube.com/watch?v=4dQ2fA7sYEU" class="play-in-btn video-popup">
                             <i class="fa fa-play"></i>
                         </a>
                     </div>
@@ -649,15 +652,12 @@
         <div class="map-contact-form">
             <h5>Свяжитесь с нами</h5>
             <form id="first_form" action="#" method="POST">
-
                 <input type="text" id="first_name" name="user_name" placeholder="Имя" required>
                 <input type="text" id="phone" class="phone" name="user_phone" placeholder="телефон" maxlength="13" minlength="10" required>
                 <textarea type="text" name="user_msg" placeholder="ваше сообщение"></textarea>
-                <button id="opener" type="submit" class="site-btn" >Отправить</button>
-
+                <button id="opener" type="submit" class="site-btn">Отправить</button>
             </form>
-
-            <div id="dialog" class="modal " title="Сообщение отправлено">
+            <div id="dialog" class="modal"  title="Сообщение отправлено">
               <p>Спасибо за заявку! <br> Мы скоро с вам свяжемся</p>
             </div>
         </div>
@@ -672,7 +672,9 @@
             <div class="col-lg-3">
                 <div class="footer-logo-item">
                     <div class="f-logo">
-                        <a href="#"><img src="" alt="">Иконка</a>
+                        <a href="#">
+                          <img src="img/logo.png" alt="">
+                        </a>
                     </div>
                     <p>Despite growth of the Internet over the past seven years, the use of toll-free phone numbers
                         in television advertising continues.</p>
