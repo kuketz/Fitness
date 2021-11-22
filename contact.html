@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+  <title>Фитнесс | Контакты</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:400,600,700,800,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Oswald:300,400,500,600,700&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="jquery-ui-1.13.0/jquery-ui.js"></script>
+    <!-- Css Styles -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css">
+    <link rel="stylesheet" href="css/elegant-icons.css" type="text/css">
+    <link rel="stylesheet" href="css/nice-select.css" type="text/css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css" type="text/css">
+    <link rel="stylesheet" href="css/magnific-popup.css" type="text/css">
+    <link rel="stylesheet" href="css/slicknav.min.css" type="text/css">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel="stylesheet" href="css/weathstyle.css">
+</head>
+
+<body>
+    <!-- Page Preloder -->
+    <div id="preloder">
+        <div class="loader"></div>
+    </div>
+
+    <!-- Header Section Begin -->
+    <header class="header-section header-normal">
+        <div class="container-fluid">
+          <div class="logo">
+              <a href="index.html">
+                  <img src="img/logo.png" alt="">
+              </a>
+          </div>
+            <div class="top-social">
+                <a href="https://www.instagram.com/?hl=ru"><i class="fa fa-instagram"></i></a>
+                <a href="#"><i class="fa fa-facebook"></i></a>
+                <a href="#"><i class="fa fa-youtube"></i></a>
+            </div>
+            <div class="container">
+                <div class="nav-menu">
+                    <nav class="mainmenu mobile-menu">
+                        <ul>
+                            <li><a href="index.html">Главная</a></li>
+                            <li><a href="about-us.html">О нас</a></li>
+                            <li><a href="schedule.html">Расписание</a></li>
+                            <li><a href="gallery.html">Галлерея</a></li>
+                            <li><a href="blog.html">Блог</a>  </li>
+                            <li class="active"><a href="contact.html">Контакты</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <div id="mobile-menu-wrap"></div>
+        </div>
+    </header>
+    <!-- Header End -->
+
+    <!-- Map Section Begin -->
+    <div class="contact-map">
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d29778.904551260137!2d37.59183081052417!3d48.722524766115576!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sua!4v1636744300160!5m2!1sru!2sua"
+            height="530" style="border: 0" allowfullscreen=""></iframe>
+        <div class="map-hover">
+            <h5>Краматорск</h5>
+            <ul>
+                <li>Будни: 10.00 - 23.00</li>
+                <li>Суббота: 10.00 - 23.00</li>
+                <li>Воскресенье: Закрыто</li>
+            </ul>
+            <i class="icon_pin"></i>
+        </div>
+    </div>
+    <!-- Map Section End -->
+
+    <!-- Contact Section Begin -->
+    <section class="contact-section spad">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="contact-info">
+                        <h4>Информация</h4>
+                        <ul>
+                            <li><i class="fa fa-phone"></i>(12)-100-100-100</li>
+                            <li><i class="fa fa-envelope"></i>Example@gmail.com</li>
+                        </ul>
+                    </div>
+                    <div class="contact-address">
+                        <h4>Адрес</h4>
+                        <ul>
+                            <li><i class="fa fa-map-marker"></i>  г.Краматорск
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-8 offset-lg-1">
+                    <div class="contact-form">
+                        <h4>Связаться с нами</h4>
+                        <form id="myForm" action="#" method="POST" onsubmit="checkForm()">
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <input type="text" id="userName" name="user_name" placeholder="Имя" required>
+                                </div>
+                                <div class="col-lg-6">
+                                    <input type="text" id="email" name="user_mail" placeholder="почта: example@gmail.com" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required onclick="regClick()">
+                                </div>
+
+                                <div class="col-lg-12">
+                                    <textarea name="user_msg" placeholder="ваше сообщение"></textarea>
+                                    <button type="submit" class="c-btn"> Отправить сообщение</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Contact Section End -->
+
+    <!-- Cta Section Begin -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="cta-text">
+                        <h3>Начните заниматься сегодня</h3>
+                        <p>Новые посетители получают 50% скидку на первое занятие</p>
+                    </div>
+                    <a href="#" class="primary-btn cta-btn">заказать сейчас</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Cta Section End -->
+
+
+    <!-- Footer Section Begin -->
+    <footer class="footer-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="footer-logo-item">
+                        <div class="f-logo">
+                            <a href="#"><img src="img/logo.png" alt=""></a>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                          Impedit debitis vitae nam voluptatum odio, reprehenderit culpa, quibusdam accusantium alias,
+                          consequatur magnam. Inventore explicabo eius soluta mollitia, unde magni nostrum facilis.</p>
+                        <div class="social-links">
+                            <h6>Подписывайтесь</h6>
+                            <a href="#"><i class="fa fa-facebook"></i></a>
+                            <a href="#"><i class="fa fa-youtube"></i></a>
+                            <a href="#"><i class="fa fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 offset-lg-1">
+                    <div class="footer-widget">
+                        <h5>Наш блог</h5>
+                        <div class="footer-blog">
+                            <a href="#" class="fb-item">
+                                <h6>Люди которые работают</h6>
+                                <span class="blog-time"><i class="fa fa-clock-o"></i> 2.12.2021</span>
+                            </a>
+                            <a href="#" class="fb-item">
+                                <h6>Что делать если... </h6>
+                                <span class="blog-time"><i class="fa fa-clock-o"></i> 5.11.2021</span>
+                            </a>
+                            <a href="#" class="fb-item">
+                                <h6>Попробовать раз и не пожалеть </h6>
+                                <span class="blog-time"><i class="fa fa-clock-o"></i> 7.10.2021</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2">
+                    <div class="footer-widget">
+                        <h5>Программа</h5>
+                        <ul class="workout-program">
+                            <li><a href="#">Бодибилдинг</a></li>
+                            <li><a href="#">Бег</a></li>
+                            <li><a href="#">Растяжка</a></li>
+                            <li><a href="#">Потеря веса</a></li>
+                            <li><a href="#">Gym Fitness</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="footer-widget">
+                        <h5>Связь с нами</h5>
+                        <ul class="footer-info">
+                            <li>
+                                <i class="fa fa-phone"></i>
+                                <span>Тел:</span>
+                                +38(00) 12345 6789
+                            </li>
+                            <li>
+                                <i class="fa fa-envelope-o"></i>
+                                <span>Email:</span>
+                                example.info@gmail.com
+                            </li>
+                            <li>
+                                <i class="fa fa-map-marker"></i>
+                                <span>Адрес:</span>
+                                Украина, г.Краматорск
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright-text">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 text-center">
+                        <div class="ct-inside">
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> | <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://github.com/kuketz" target="_blank">Павлов Кирилл</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer Section End -->
+
+<script type="text/javascript">
+  function regClick(){
+   var inputMail = document.getElementById("email").value;
+   var expDate = new Date;
+   expDate.setTime((new Date).getTime() + 600*1000); //600 секунд
+   document.cookie = "email=" + inputMail + ";expires=" + expDate.toGMTString() + ";path=/";
+   var m = document.getElementById("email");
+  }
+</script>
+    <!-- Js Plugins -->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/mixitup.min.js"></script>
+    <script src="js/jquery.nice-select.min.js"></script>
+    <script src="js/jquery.slicknav.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/masonry.pkgd.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
