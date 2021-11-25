@@ -5,7 +5,7 @@ $(document).ready(function()  {
     --------------------*/
     $(window).on('load', function () {
         $(".loader").fadeOut();
-        $("#preloder").delay(200).fadeOut("fast");
+        $("#preloder").delay(800).fadeOut("fast");
 
         /*------------------
             Gallery filter
