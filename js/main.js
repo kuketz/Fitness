@@ -116,14 +116,9 @@ $(document).ready(function()  {
         "Ок": function() {
           $( this ).dialog( "close" );
           $( "#opener" ).css("visibility","visible");
-
-        },
-        Cancel: function() {
-          $( this ).dialog( "close" );
-          $( "#opener" ).css("visibility","visible");
         }
-        }
-      });
+      }
+    });
       $( "#dialog" ).dialog("option", "width", 335);
       $( "#opener" ).on( "click", function() {
         $( "#dialog" ).dialog( "open" );
