@@ -74,9 +74,7 @@ ol {
 	margin: 0;
 }
 
-/*---------------------
-  Helper CSS
------------------------*/
+/* ----------------------- */
 
 .section-title h2 {
 	color: #ffffff;
@@ -136,14 +134,13 @@ ol {
 	height: 46px;
 	border-left: 2px solid #e16521;
 	border-right: 2px solid #e4381C;
-	-webkit-box-sizing: border-box;
 	box-sizing: border-box;
 	background-position: 0 0, 0 100%;
 	background-repeat: no-repeat;
 	background-size: 100% 2px;
 	background-image:
-	linear-gradient(to right, #e4381C 100%, #e16521 100%),
-	linear-gradient(to right, #e4381C 0%, #e16521 0%);
+		linear-gradient(to right, #e4381C 100%, #e16521 100%),
+		linear-gradient(to right, #e4381C 0%, #e16521 0%);
 	transition-duration: 1000ms;
 	line-height: 45px;
 	position: relative;
@@ -184,7 +181,6 @@ ol {
 	border-right: 2px solid #e4381C;
 	border-top: none;
 	border-bottom: none;
-	-webkit-box-sizing: border-box;
 	box-sizing: border-box;
 	background-position: 0 0, 0 100%;
 	background-repeat: no-repeat;
@@ -226,6 +222,7 @@ ol {
 	border: 1px solid #64C364;
 	box-shadow: 0 0 4px #64C364;
 }
+
 /* Preloder */
 
 #preloder {
@@ -248,50 +245,26 @@ ol {
 	margin-left: -13px;
 	border-radius: 60px;
 	animation: loader 0.8s linear infinite;
-	-webkit-animation: loader 0.8s linear infinite;
-}
+	}
 
 @keyframes loader {
 	0% {
-		-webkit-transform: rotate(0deg);
 		transform: rotate(0deg);
 		border: 4px solid #f44336;
 		border-left-color: transparent;
 	}
 	50% {
-		-webkit-transform: rotate(180deg);
 		transform: rotate(180deg);
 		border: 4px solid #673ab7;
 		border-left-color: transparent;
 	}
 	100% {
-		-webkit-transform: rotate(360deg);
 		transform: rotate(360deg);
 		border: 4px solid #f44336;
 		border-left-color: transparent;
 	}
 }
-
-@-webkit-keyframes loader {
-	0% {
-		-webkit-transform: rotate(0deg);
-		border: 4px solid #f44336;
-		border-left-color: transparent;
-	}
-	50% {
-		-webkit-transform: rotate(180deg);
-		border: 4px solid #673ab7;
-		border-left-color: transparent;
-	}
-	100% {
-		-webkit-transform: rotate(360deg);
-		border: 4px solid #f44336;
-		border-left-color: transparent;
-	}
-}
-
-/*---------------------
-  Header
+   /* Header
 -----------------------*/
 
 .header-section {
@@ -384,13 +357,9 @@ ol {
 	text-transform: uppercase;
 	font-weight: 500;
 	line-height: 28px;
-	-webkit-transition: 0.3s;
-	-o-transition: 0.3s;
 	transition: 0.3s;
 	display: block;
 	font-family: "Oswald", sans-serif;
-	-webkit-transition: all 0.3s;
-	-o-transition: all 0.3s;
 	transition: all 0.3s;
 }
 
@@ -403,8 +372,6 @@ ol {
 	background: #e4381C;
 	content: "";
 	opacity: 0;
-	-webkit-transition: all 0.3s;
-	-o-transition: all 0.3s;
 	transition: all 0.3s;
 }
 
@@ -430,8 +397,6 @@ ol {
 	background: #e4381C;
 	opacity: 0;
 	visibility: hidden;
-	-webkit-transition: all 0.3s;
-	-o-transition: all 0.3s;
 	transition: all 0.3s;
 	z-index: 99;
 }
@@ -471,9 +436,9 @@ ol {
 	display: none;
 }
 
-/*---------------------
+/*
   Hero Section
------------------------*/
+----------------------- */
 
 .hero-items .owl-item.active .single-hero-item .hero-text h2,
 .hero-items .owl-item.active .single-hero-item .hero-text h1,
@@ -550,8 +515,6 @@ ol {
 .single-hero-item {
 	height: 950px;
 	padding-top: 20px;
-	display: -webkit-box;
-	display: -ms-flexbox;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -593,8 +556,7 @@ ol {
 	opacity: 1;
 }
 
-/*---------------------
-  Feature Item
+  /* Feature Item
 -----------------------*/
 
 .feature-item {
@@ -638,9 +600,9 @@ ol {
 	opacity: 1;
 }
 
-/*---------------------
+/*
   Home About
------------------------*/
+----------------------- */
 
 .home-about {
 	background: #8268d7;
@@ -679,7 +641,7 @@ ol {
 	min-width: 100%;
 }
 
-/*---------------------
+/*
   Classes Section
 -----------------------*/
 
@@ -727,8 +689,6 @@ ol {
 	background: #e4381C;
 	content: "";
 	opacity: 0;
-	-webkit-transition: all 0.3s;
-	-o-transition: all 0.3s;
 	transition: all 0.3s;
 }
 
@@ -754,7 +714,7 @@ ol {
 	opacity: 1;
 }
 
-/*---------------------
+/*
   Classes Time Table Section
 -----------------------*/
 
@@ -809,8 +769,6 @@ ol {
 }
 
 .classtime-table .ts-item {
-	-webkit-transition: all 0.4s;
-	-o-transition: all 0.4s;
 	transition: all 0.4s;
 }
 
@@ -894,7 +852,7 @@ ol {
 	transition: all 0.3s;
 }
 
-/*---------------------
+/*
   Price Section
 -----------------------*/
 
@@ -1065,7 +1023,7 @@ ol {
 	color: #ffffff;
 }
 
-/*---------------------
+/*
   Choseup Section
 -----------------------*/
 
@@ -1105,7 +1063,7 @@ ol {
 	font-weight: 500;
 }
 
-/*---------------------
+/*
   Video Section
 -----------------------*/
 
@@ -1153,7 +1111,7 @@ ol {
 	content: "";
 }
 
-/*---------------------
+/*
   Blog Section
 -----------------------*/
 
@@ -1261,8 +1219,6 @@ ol {
 }
 
 .blog-item .play-btn {
-	display: -webkit-box;
-	display: -ms-flexbox;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -1295,7 +1251,7 @@ ol {
 	content: "";
 }
 
-/*---------------------
+/*
   Cta Section
 -----------------------*/
 
@@ -1324,13 +1280,13 @@ ol {
 .cta-section .primary-btn.cta-btn {
 	float: right;
 	border-color: #ffffff;
-	background-image: -webkit-gradient(linear, left top, right top, color-stop(100%, #ffffff), to(#ffffff)), -webkit-gradient(linear, left top, right top, from(#ffffff), color-stop(0%, #ffffff));
-	background-image: -o-linear-gradient(left, #ffffff 100%, #ffffff 100%), -o-linear-gradient(left, #ffffff 0%, #ffffff 0%);
-	background-image: linear-gradient(to right, #ffffff 100%, #ffffff 100%), linear-gradient(to right, #ffffff 0%, #ffffff 0%);
+	background-image:
+		linear-gradient(to right, #ffffff 100%, #ffffff 100%),
+		linear-gradient(to right, #ffffff 0%, #ffffff 0%);
 	margin-top: 14px;
 }
 
-/*---------------------
+/*
   Map Section
 -----------------------*/
 
@@ -1425,26 +1381,6 @@ ol {
 	margin-right: 0;
 }
 
-.map-contact-detalis .map-contact-form form input::-webkit-input-placeholder {
-	color: #272727;
-	font-weight: 600;
-}
-
-.map-contact-detalis .map-contact-form form input::-moz-placeholder {
-	color: #272727;
-	font-weight: 600;
-}
-
-.map-contact-detalis .map-contact-form form input:-ms-input-placeholder {
-	color: #272727;
-	font-weight: 600;
-}
-
-.map-contact-detalis .map-contact-form form input::-ms-input-placeholder {
-	color: #272727;
-	font-weight: 600;
-}
-
 .map-contact-detalis .map-contact-form form input::placeholder {
 	color: #272727;
 	font-weight: 600;
@@ -1463,32 +1399,13 @@ ol {
 	margin-bottom: 18px;
 }
 
-.map-contact-detalis .map-contact-form form textarea::-webkit-input-placeholder {
-	color: #272727;
-	font-weight: 600;
-}
-
-.map-contact-detalis .map-contact-form form textarea::-moz-placeholder {
-	color: #272727;
-	font-weight: 600;
-}
-
-.map-contact-detalis .map-contact-form form textarea:-ms-input-placeholder {
-	color: #272727;
-	font-weight: 600;
-}
-
-.map-contact-detalis .map-contact-form form textarea::-ms-input-placeholder {
-	color: #272727;
-	font-weight: 600;
-}
 
 .map-contact-detalis .map-contact-form form textarea::placeholder {
 	color: #272727;
 	font-weight: 600;
 }
 
-/*---------------------
+/*
   Footer Section
 -----------------------*/
 
@@ -1562,8 +1479,6 @@ ol {
 	color: #ffffff;
 	text-transform: uppercase;
 	margin-bottom: 12px;
-	-webkit-transition: all 0.3s;
-	-o-transition: all 0.3s;
 	transition: all 0.3s;
 }
 
@@ -1635,9 +1550,7 @@ ol {
 	color: #e4381C;
 }
 
-/* ----------------------------------- Other Pages Styles ------------------------------*/
-
-/*---------------------
+/*
   Breadcrumb Section
 -----------------------*/
 
@@ -1684,7 +1597,7 @@ ol {
 	color: #ffffff;
 }
 
-/*---------------------
+/*
   AboutUs Section
 -----------------------*/
 
@@ -1741,7 +1654,7 @@ ol {
 	margin-right: 9px;
 }
 
-/*---------------------
+/*
   Testimonial Section
 -----------------------*/
 
@@ -1816,7 +1729,7 @@ ol {
 	margin-right: 0;
 }
 
-/*---------------------
+/*
   Trainer Section
 -----------------------*/
 
@@ -1849,20 +1762,12 @@ ol {
 	position: absolute;
 	left: -50px;
 	top: 20px;
-	-webkit-transition: all 0.5s;
-	-o-transition: all 0.5s;
 	transition: all 0.5s;
 }
 
 .trainer-item .ti-pic .ti-links a {
-	display: -webkit-box;
-	display: -ms-flexbox;
 	display: flex;
-	-webkit-box-align: center;
-	-ms-flex-align: center;
 	align-items: center;
-	-webkit-box-pack: center;
-	-ms-flex-pack: center;
 	justify-content: center;
 	width: 40px;
 	height: 40px;
@@ -1871,13 +1776,10 @@ ol {
 	background: #ffffff;
 	margin-bottom: 10px;
 	border-radius: 2px;
-	-webkit-transition: all 0.3s;
-	-o-transition: all 0.3s;
 	transition: all 0.3s;
 }
 
 .trainer-item .ti-pic .ti-links a:hover {
-	background: -o-linear-gradient(45deg, #e16521, #e4381C);
 	background: linear-gradient(45deg, #e16521, #e4381C);
 	color: #ffffff;
 }
@@ -1886,13 +1788,11 @@ ol {
 	position: absolute;
 	left: 0;
 	bottom: 0;
-	background: -o-linear-gradient(45deg, #e16521, #e4381C);
 	background: linear-gradient(45deg, #e16521, #e4381C);
 	width: 100%;
 	padding-left: 20px;
 	padding-top: 15px;
 	padding-bottom: 12px;
-	-webkit-clip-path: polygon(0 0, 100% 0%, 81% 0, 100% 100%, 0 100%);
 	clip-path: polygon(0 0, 100% 0%, 81% 0, 100% 100%, 0 100%);
 }
 
@@ -1908,12 +1808,12 @@ ol {
 	font-family: "Nunito Sans", sans-serif;
 }
 
-/*---------------------
+/*
   Gallery Section
 -----------------------*/
 
 .gallery-section {
-	background: #151515;
+	background: #8268d7;
 	padding-bottom: 70px;
 	padding-top: 95px;
 }
@@ -1986,8 +1886,6 @@ ol {
 	content: "";
 	opacity: 0;
 	z-index: 2;
-	-webkit-transition: all 0.3s;
-	-o-transition: all 0.3s;
 	transition: all 0.3s;
 }
 
@@ -2010,8 +1908,6 @@ ol {
 	height: 100%;
 	left: 0;
 	top: 0;
-	display: -webkit-box;
-	display: -ms-flexbox;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -2059,7 +1955,7 @@ ol {
 	cursor: pointer;
 }
 
-/*---------------------
+/*
   Blog Page Section
 -----------------------*/
 
@@ -2087,18 +1983,14 @@ ol {
 	line-height: 40px;
 	text-align: center;
 	border-radius: 2px;
-	-webkit-transition: all 0.3s;
-	-o-transition: all 0.3s;
 	transition: all 0.3s;
 }
 
 .blog-option .blog-pagination a.active {
-	background: -o-linear-gradient(45deg, #e16521, #e4381C);
 	background: linear-gradient(45deg, #e16521, #e4381C);
 }
 
 .blog-option .blog-pagination a:hover {
-	background: -o-linear-gradient(45deg, #e16521, #e4381C);
 	background: linear-gradient(45deg, #e16521, #e4381C);
 }
 
@@ -2170,7 +2062,7 @@ ol {
 	color: #222222;
 }
 
-/*---------------------
+/*
   Blog Single Hero
 -----------------------*/
 
@@ -2213,7 +2105,7 @@ ol {
 	display: none;
 }
 
-/*---------------------
+/*
   Blog Single Section
 -----------------------*/
 
@@ -2331,8 +2223,6 @@ ol {
 	display: inline-block;
 	color: #a6a6a6;
 	margin-left: 15px;
-	-webkit-transition: all 0.3s;
-	-o-transition: all 0.3s;
 	transition: all 0.3s;
 }
 
@@ -2375,8 +2265,6 @@ ol {
 	top: 0;
 	background: #ffffff;
 	opacity: 1;
-	-webkit-transition: all 0.4s;
-	-o-transition: all 0.4s;
 	transition: all 0.4s;
 }
 
@@ -2398,8 +2286,6 @@ ol {
 	line-height: 26px;
 	position: relative;
 	z-index: 9;
-	-webkit-transition: all 0.3s;
-	-o-transition: all 0.3s;
 	transition: all 0.3s;
 }
 
@@ -2409,8 +2295,6 @@ ol {
 	color: #151515;
 	position: relative;
 	z-index: 9;
-	-webkit-transition: all 0.3s;
-	-o-transition: all 0.3s;
 	transition: all 0.3s;
 }
 
@@ -2510,27 +2394,8 @@ ol {
 	margin-bottom: 30px;
 	font-size: 16px;
 	color: #a6a6a6;
-	-webkit-transition: all 0.3s;
-	-webkit-transition: 0.3s;
-	-o-transition: 0.3s;
 	transition: 0.3s;
 	border: 1px solid #131313;
-}
-
-.leave-comment-form form input::-webkit-input-placeholder {
-	font-weight: 600;
-}
-
-.leave-comment-form form input::-moz-placeholder {
-	font-weight: 600;
-}
-
-.leave-comment-form form input:-ms-input-placeholder {
-	font-weight: 600;
-}
-
-.leave-comment-form form input::-ms-input-placeholder {
-	font-weight: 600;
 }
 
 .leave-comment-form form input::placeholder {
@@ -2553,29 +2418,10 @@ ol {
 	padding-top: 15px;
 	font-size: 16px;
 	color: #a6a6a6;
-	-webkit-transition: all 0.3s;
-	-webkit-transition: 0.3s;
-	-o-transition: 0.3s;
 	transition: 0.3s;
 	resize: none;
 	margin-bottom: 32px;
 	border: 1px solid #131313;
-}
-
-.leave-comment-form form textarea::-webkit-input-placeholder {
-	font-weight: 600;
-}
-
-.leave-comment-form form textarea::-moz-placeholder {
-	font-weight: 600;
-}
-
-.leave-comment-form form textarea:-ms-input-placeholder {
-	font-weight: 600;
-}
-
-.leave-comment-form form textarea::-ms-input-placeholder {
-	font-weight: 600;
 }
 
 .leave-comment-form form textarea::placeholder {
@@ -2593,7 +2439,6 @@ ol {
 	color: #ffffff;
 	font-weight: 500;
 	text-transform: uppercase;
-	background: -o-linear-gradient(45deg, #e16521, #e4381C);
 	background: linear-gradient(45deg, #e16521, #e4381C);
 	padding: 10px 47px;
 	border: none;
@@ -2602,7 +2447,7 @@ ol {
 	border-radius: 2px;
 }
 
-/*---------------------
+/*
   Contact Map Section
 -----------------------*/
 
@@ -2658,7 +2503,7 @@ ol {
 	bottom: -72px;
 }
 
-/*---------------------
+/*
   Contat Section
 -----------------------*/
 
@@ -2740,22 +2585,6 @@ ol {
 	border: 1px solid #131313;
 }
 
-.contact-form form input::-webkit-input-placeholder {
-	font-weight: 600;
-}
-
-.contact-form form input::-moz-placeholder {
-	font-weight: 600;
-}
-
-.contact-form form input:-ms-input-placeholder {
-	font-weight: 600;
-}
-
-.contact-form form input::-ms-input-placeholder {
-	font-weight: 600;
-}
-
 .contact-form form input::placeholder {
 	font-weight: 600;
 }
@@ -2782,22 +2611,6 @@ ol {
 	border: 1px solid #131313;
 }
 
-.contact-form form textarea::-webkit-input-placeholder {
-	font-weight: 600;
-}
-
-.contact-form form textarea::-moz-placeholder {
-	font-weight: 600;
-}
-
-.contact-form form textarea:-ms-input-placeholder {
-	font-weight: 600;
-}
-
-.contact-form form textarea::-ms-input-placeholder {
-	font-weight: 600;
-}
-
 .contact-form form textarea::placeholder {
 	font-weight: 600;
 }
@@ -2813,7 +2626,6 @@ ol {
 	color: #ffffff;
 	font-weight: 500;
 	text-transform: uppercase;
-	background: -o-linear-gradient(45deg, #e16521, #e4381C);
 	background: linear-gradient(45deg, #e16521, #e4381C);
 	padding: 12px 40px;
 	border: none;
@@ -2822,15 +2634,13 @@ ol {
 	border-radius: 2px;
 }
 
-/*---------------------------- Other Pages Styles ------------------------------*/
+/* Media: 1200px */
 
 @media only screen and (min-width: 1200px) {
 	.container {
 		max-width: 1200px;
 	}
 }
-
-/* Medium Device : 1200px */
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
 	.header-section {
@@ -2842,7 +2652,7 @@ ol {
 	}
 }
 
-/* Tablet Device : 768px */
+/* Media : 768px */
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
 	.header-section {
@@ -2888,7 +2698,7 @@ ol {
 	}
 }
 
-/* Large Mobile : 480px */
+/* Media : 480px */
 
 @media only screen and (max-width: 767px) {
 	.header-section {
@@ -2991,7 +2801,7 @@ ol {
 	}
 }
 
-/* Small Mobile : 320px */
+/* Media : 320px */
 
 @media only screen and (max-width: 479px) {
 	.section-title h2,
