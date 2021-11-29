@@ -10,10 +10,6 @@
 <!-- Google Font -->
 <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:400,600,700,800,900&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Oswald:300,400,500,600,700&display=swap" rel="stylesheet">
-<!-- Jquery script -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-
-<script src="jquery-ui-1.13.0/jquery-ui.js"></script>
 <!-- Css Styles -->
 <link rel="stylesheet" href="jquery-ui-1.13.0/jquery-ui.css">
 <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
@@ -38,7 +34,7 @@
 <header class="header-section">
     <div class="container-fluid">
         <div class="logo">
-            <a href="./index.html">
+            <a href="index.html">
                 <img src="img/logo.png" alt="">
             </a>
         </div>
@@ -51,17 +47,12 @@
             <div class="nav-menu">
                 <nav class="mainmenu mobile-menu">
                     <ul>
-                        <li class="active"><a href="./index.html">Главная</a></li>
-                        <li><a href="./about-us.html">О нас</a></li>
-                        <li><a href="./schedule.html">Расписание</a></li>
-                        <li><a href="./gallery.html">Галлерея</a></li>
-                        <li><a href="./blog.html">Блог</a>
-                            <ul class="dropdown">
-                                <li><a href="./about-us.html">Про нас</a></li>
-                                <li><a href="./blog-single.html">Детальнее</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="./contact.html">Контакты</a></li>
+                        <li class="active"><a href="index.html">Главная</a></li>
+                        <li><a href="about-us.html">О нас</a></li>
+                        <li><a href="schedule.html">Расписание</a></li>
+                        <li><a href="gallery.html">Галлерея</a></li>
+                        <li><a href="blog.html">Блог</a></li>
+                        <li><a href="contact.html">Контакты</a></li>
                     </ul>
                 </nav>
             </div>
@@ -125,21 +116,80 @@
                 <div class="feature-item set-bg" data-setbg="img/feature/feature-1.jpg">
                     <h3>Групповые классы</h3>
                     <p>Вам удасться устранить предубеждения <br /> и преимущества занятий.</p>
-                    <a href="#" class="primary-btn f-btn">Читать далее</a>
+                    <a href="#" class="primary-btn f-btn" data-toggle="modal" data-target="#Modalfirst">Читать далее</a>
+                </div>
+                <div class="modal fade" id="Modalfirst" tabindex="-1" role="dialog" aria-labelledby="ModalfirstTitle" aria-hidden="true">
+                  <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content" >
+                      <div class="modal-header" style="background: #8268d7;">
+                        <h5 class="modal-title" id="exampleModalLongTitle">Групповые классы</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+                      <div class="modal-body text-dark">
+                        Групповые занятия фитнесом — отличный метод борьбы с лишним весом, тренировки выносливости, а также приятного общения с единомышленниками.
+                        Какими бывают групповые занятия в фитнес-клубах и, что может подойти конкретно Вам, можете уточнить у тренера.
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal" style="background: #8268d7;">Закрыть</button>
+                      </div>
+                    </div>
+                  </div>
                 </div>
             </div>
             <div class="col-md-4">
                 <div class="feature-item set-bg" data-setbg="img/feature/feature-2.jpg">
                     <h3>Персональные тренеровки</h3>
                     <p>Lorem ipsum dolor sit amet.<br />  ipsum dolor sit.</p>
-                    <a href="#" class="primary-btn f-btn">Читать далее</a>
+                    <a href="#" class="primary-btn f-btn" data-toggle="modal" data-target="#Modalsecond">Читать далее</a>
+                </div>
+                <div class="modal fade" id="Modalsecond" tabindex="-1" role="dialog" aria-labelledby="ModalsecondTitle" aria-hidden="true">
+                  <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content" >
+                      <div class="modal-header" style="background: #8268d7;">
+                        <h5 class="modal-title" id="exampleModalLongTitle">Персональные тренеровки</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+                      <div class="modal-body text-dark">
+                      Персональная тренировка – это занятие, которое инструктор проводит лично для Вас,
+                      с учетом Ваших целей, физической формы, индивидуальных особенностей и пожеланий.
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal" style="background: #8268d7;">Закрыть</button>
+                      </div>
+                    </div>
+                  </div>
                 </div>
             </div>
+
             <div class="col-md-4">
                 <div class="feature-item set-bg" data-setbg="img/feature/feature-3.jpg">
                     <h3>Спортивное питание</h3>
                     <p>Lorem ipsum dolor sit amet, .<br /> consectetur adipisicing elit.</p>
-                    <a href="#" class="primary-btn f-btn">Читать далее</a>
+                    <a href="#" class="primary-btn f-btn" data-toggle="modal" data-target="#Modalthird">Читать далее</a>
+                </div>
+                <div class="modal fade" id="Modalthird" tabindex="-1" role="dialog" aria-labelledby="ModalthirdTitle" aria-hidden="true">
+                  <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content" >
+                      <div class="modal-header" style="background: #8268d7;">
+                        <h5 class="modal-title" id="exampleModalLongTitle">Спортивное питание</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+                      <div class="modal-body text-dark">
+                      Спортивное питание – это особая группа пищевых продуктов, в составе которых нет химических добавок и стероидов.
+                      Предназначены эти продукты для людей, занимающихся спортом, фитнесом и ведущих активный образ жизни.
+                      Персональный тренер поможет подобрать и посоветовать вам.
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal" style="background: #8268d7;">Закрыть</button>
+                      </div>
+                    </div>
+                  </div>
                 </div>
             </div>
         </div>
@@ -754,6 +804,9 @@
 <!-- Footer Section End -->
 
 <!-- Js Plugins -->
+
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="js/main.js"></script>
 <script src="js/bootstrap.min.js"></script>
 <script src="js/jquery.magnific-popup.min.js"></script>
 <script src="js/mixitup.min.js"></script>
@@ -761,6 +814,6 @@
 <script src="js/jquery.slicknav.js"></script>
 <script src="js/owl.carousel.min.js"></script>
 <script src="js/masonry.pkgd.min.js"></script>
-<script src="js/main.js"></script>
+<script src="jquery-ui-1.13.0/jquery-ui.js"></script>
 </body>
 </html>
