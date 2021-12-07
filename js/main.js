@@ -1,20 +1,28 @@
 $(document).ready(function()  {
-  /*------------------
-      Next id scroll
-  --------------------*/
-      $(".hero-text").on("click","a", function (event) {
+      /*------------------
+          Preloader
+      --------------------*/
+      $(window).on('load', function () {
+          $(".loader").fadeOut();
+          $("#preloder").delay(800).fadeOut("fast");
+
+
+      /*------------------
+          Next id scroll
+      --------------------*/
+      $(".hero-text, .about-text").on("click","a", function (event) {
           event.preventDefault();
           var id  = $(this).attr('href'),
               top = $(id).offset().top;
           $('body,html').animate({scrollTop: top}, 2000);
       });
 
-    /*------------------
-        Preloader
-    --------------------*/
-    $(window).on('load', function () {
-        $(".loader").fadeOut();
-        $("#preloder").delay(800).fadeOut("fast");
+      $(".single-price-plan").on("click","a", function (event) {
+          event.preventDefault();
+          var id  = $(this).attr('href'),
+              top = $(id).offset().top;
+          $('body,html').animate({scrollTop: top}, 2000);
+      });
 
         /*------------------
             Gallery filter
@@ -33,14 +41,16 @@ $(document).ready(function()  {
 			columnWidth: '.grid-sizer',
 		});
 
-    });
+  });
 
     /*------------------
         Background Set
     --------------------*/
     $('.set-bg').each(function () {
         var bg = $(this).data('setbg');
-        $(this).css('background-image', 'url(' + bg + ')');
+        $(this).css({
+          'background-image': 'url(' + bg + ')'
+        });
     });
 
     /*------------------
@@ -96,8 +106,8 @@ $(document).ready(function()  {
         Magnific Popup
     --------------------*/
     $('.play-btn').magnificPopup({
-      type: 'iframe'
-  });
+        type: 'iframe'
+    });
 
     $('.image-popup').magnificPopup({
         type: 'image'
@@ -110,33 +120,37 @@ $(document).ready(function()  {
         Modal
     --------------------*/
 
-    $(document).ready(function() {
-      $( "#dialog" ).dialog({
-        autoOpen: false,
-        show: {
-          effect: "slide",
-          duration: 1000
-        },
-        hide: {
-          effect: "fold",
-          duration: 1000
-        },
-        buttons: {
-        "Ок": function() {
-          $( this ).dialog( "close" );
-          $( "#opener" ).css("visibility","visible");
-        }
-      }
-    });
-      $( "#dialog" ).dialog("option", "width", 335);
-      $( "#opener" ).on( "click", function() {
-        $( "#dialog" ).dialog( "open" );
-          $( "#opener" ).css("visibility","hidden");
-      });
+   //  $(document).ready(function() {
+   //    $( "#dialog" ).dialog({
+   //      autoOpen: false,
+   //      show: {
+   //        effect: "slide",
+   //        duration: 1000
+   //      },
+   //      hide: {
+   //        effect: "fold",
+   //        duration: 1000
+   //      },
+   //      buttons: {
+   //      "Ок": function() {
+   //          $( this ).dialog( "close" );
+   //          $( "#opener" ).css("visibility","visible");
+   //        }
+   //      }
+   //  });
+   //    $( "#dialog" ).dialog("option", "width", 335);
+   //    $( "#opener" ).on( "click", function() {
+   //        $( "#dialog" ).dialog( "open" );
+   //        $( "#opener" ).css("visibility","hidden");
+   //    });
+   //    });
+   // });
+
+   $("#opener").click(function(e){
+     e.preventDefault();
+      $('#first_form').trigger('reset');
    });
-   /*------------------
-        Modal
-   --------------------*/
+
 
     /*------------------
        Timetable Filter
@@ -159,5 +173,23 @@ $(document).ready(function()  {
             }
         });
     });
+  });
 
-});
+/*------------------
+  Checkbox
+--------------------*/
+
+
+  $(document).ready(function() {
+      $("input:checkbox").change(function() {
+        var isOpen = $('.slider').addClass('.switch input:checked+.slider:before');
+        if (isOpen) {
+            $(".price-plan").css("display", "none");
+            $(".price-plan2").css("display", "block")
+        } else {
+            $(".price-plan2").css("display", "none")
+            $(".price-plan").css("display", "block");
+        }
+      });
+
+  })
