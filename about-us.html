@@ -19,6 +19,7 @@
 <link rel="stylesheet" href="css/magnific-popup.css" type="text/css">
 <link rel="stylesheet" href="css/slicknav.min.css" type="text/css">
 <link rel="stylesheet" href="css/style.css" type="text/css">
+<link rel="stylesheet" href="css/bmi.css">
 </head>
 
 <body>
@@ -203,75 +204,95 @@
 </section>
 <!-- Trainer Section End -->
 
-<!-- Testimonial Section End -->
-<section class="testimonial-section set-bg spad" data-setbg="img/testimonial-bg.jpg">
+<!-- BMI Section Begin -->
+<section class="bmi-section set-bg spad" data-setbg="img/hero-slider/hero-3.jpg">
     <div class="container">
         <div class="row">
-            <div class="col-lg-10 offset-lg-1">
-                <div class="testimonial-slider owl-carousel">
-                    <div class="ts-item">
-                        <div class="rating">
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                        </div>
-                        <h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                          Tenetur, officia deleniti dolor fugit sed necessitatibus veritatis,
-                          explicabo eos repellat beatae doloribus, similique. Vitae modi animi delectus labore, vel, accusamus.
-                          Quibusdam!</h4>
-                        <div class="author-name">
-                            <h5>Оксана Петрова</h5>
-                            <span>Директор</span>
-                        </div>
-                        <div class="author-pic">
-                            <img src="img/author-pic.png" alt="">
+            <div class="col-lg-12">
+              <div class="bmi-title" >
+                  <h2 >Ваш персональный калькулятор</h2>
+                  <p >расчета индекса массы тела и роста</p>
+              </div>
+              <div class="imtcalc">
+                <form>
+                    <div class="imtcalc_row">
+                        <div class="imtcalc_col imtcalc_col_label">Пол:</div>
+                        <div class="imtcalc_col">
+                            <input id="imtcalc_sex0" name="imtcalc_sex" type="radio" value="1" required checked>
+                            <label for="imtcalc_sex0">мужской</label>
+                            <input id="imtcalc_sex1" name="imtcalc_sex" type="radio" value="0" required>
+                            <label for="imtcalc_sex1">женский</label>
                         </div>
                     </div>
-                    <div class="ts-item">
-                        <div class="rating">
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
+                    <div class="imtcalc_row">
+                        <div class="imtcalc_col imtcalc_col_label">Вес:</div>
+                        <div class="imtcalc_col imtcalc_col_input">
+                            <input name="imtcalc_weight" type="number" min="0" value="82" required="">
                         </div>
-                        <h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit illum sapiente temporibus! Magnam sint veniam,
-                          illo natus, amet, id dolorem quibusdam nam enim suscipit obcaecati?
-                          Quidem officiis eum eligendi? Debitis.</h4>
-                        <div class="author-name">
-                            <h5>Оксана Петрова</h5>
-                            <span>Директор</span>
-                        </div>
-                        <div class="author-pic">
-                            <img src="img/author-pic.png" alt="">
+                        <div class="imtcalc_col imtcalc_col_postfix">
+                            &nbsp;кг
                         </div>
                     </div>
-                    <div class="ts-item">
-                        <div class="rating">
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
+                    <div class="imtcalc_row imtcalc_row_last">
+                        <div class="imtcalc_col imtcalc_col_label">Рост:</div>
+                        <div class="imtcalc_col imtcalc_col_input">
+                            <input name="imtcalc_height" type="number" min="0" value="170" required="">
                         </div>
-                        <h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat iusto veritatis, deserunt minima.
-                          Eum animi omnis atque voluptate illum doloremque totam vitae magnam dolorum debitis natus impedit id, quas libero..</h4>
-                        <div class="author-name">
-                            <h5>Оксана Петрова</h5>
-                            <span>Директор</span>
-                        </div>
-                        <div class="author-pic">
-                            <img src="img/author-pic.png" alt="">
+                        <div class="imtcalc_col imtcalc_col_postfix">
+                            &nbsp;см
                         </div>
                     </div>
-                </div>
+                    <button type="submit">Рассчитать индекс</button>
+                </form>
+              </div>
+              <div class="imtcalc_result" style="display: none;">
+              <div class="imtcalc_result_text">
+                <span>Ваш результат</span><span>19.03</span>
+              </div>
+              <table>
+                <thead>
+                  <tr>
+                    <th>Индекс массы тела</th>
+                    <th>Соответствие между массой человека и его ростом</th>
+                    </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>16 и менее</td>
+                            <td>Дефицит массы</td>
+                        </tr>
+                        <tr>
+                          <td>16-18.5</td>
+                          <td>Недостаточный вес</td>
+                        </tr><tr class="imtcalc_active">
+                          <td>18.5-24.99</td>
+                          <td>Нормальный вес</td>
+                        </tr>
+                        <tr>
+                          <td>25-30</td>
+                          <td>Избыточный вес (начальная стадия ожирения)</td>
+                        </tr>
+                        <tr>
+                          <td>30-35</td>
+                          <td>1 степень ожирения</td>
+                        </tr>
+                        <tr>
+                          <td>35-40</td>
+                          <td>2 степень ожирения</td>
+                        </tr>
+                        <tr>
+                          <td>40 и более</td>
+                          <td>3 степень ожирения</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
             </div>
         </div>
     </div>
 </section>
-<!-- Testimonial Section End -->
+<!-- MBI Section End -->
+
 <!-- Cta Section Begin -->
 <section class="cta-section">
     <div class="container">
@@ -388,5 +409,6 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> | <i 
 <script src="js/owl.carousel.min.js"></script>
 <script src="js/masonry.pkgd.min.js"></script>
 <script src="js/main.js"></script>
+<script src="js/bmi.js" ></script>
 </body>
 </html>
