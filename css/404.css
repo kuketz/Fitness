@@ -321,7 +321,7 @@ ol {
 }
 .top-social a:hover {
 	color: #e4381C;
-	transform: scale(2);
+	transform: scale(1.2);
 }
 .logo {
 	float: left;
