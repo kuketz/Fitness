@@ -86,13 +86,15 @@
                         <h4>Информация</h4>
                         <ul>
                             <li><i class="fa fa-phone"></i>(050) 75-69-383, Оксана</li>
-                            <li><i class="fa fa-telegram"></i>@telegram</li>
+                            <li><i class="fa fa-telegram"></i>@armiyaDerkach</li>
+
                         </ul>
                     </div>
                     <div class="contact-address">
                         <h4>Адрес</h4>
                         <ul>
-                            <li><i class="fa fa-map-marker"></i> г.Дружковка
+                            <li><i class="fa fa-map-marker"></i>Украина, г.Дружковка
+                              ул.Космонавтов
                             </li>
                         </ul>
                     </div>
@@ -100,22 +102,40 @@
                 <div class="col-lg-8 offset-lg-1">
                     <div class="contact-form">
                         <h4>Связаться с нами</h4>
-                        <form id="myForm" action="#" method="POST" onsubmit="checkForm()">
+                        <form id="first_form" action="telegram.php" method="POST">
                             <div class="row">
                                 <div class="col-lg-6">
-                                    <input type="text" id="userName" name="user_name" placeholder="Имя" required>
+                                    <input type="text" id="first_name" name="user_name" placeholder="Имя" required>
                                 </div>
                                 <div class="col-lg-6">
-                                    <input type="text" id="email" name="user_mail" placeholder="эл. почта:" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required onclick="regClick()">
-                                    <input type="text" id="phone" class="phone" name="user_phone" pattern="^+380\d{3}\d{2}\d{2}\d{2}$" value="+380" >
+                                    <!-- <input type="text" id="email" name="user_mail" placeholder="эл. почта:" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required onclick="regClick()"> -->
+                                    <input type="text" id="phone" class="phone" name="user_phone" placeholder="380(xx) xx-xx-xxx" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1');"  required>
                                 </div>
 
                                 <div class="col-lg-12">
-                                    <textarea name="user_msg" placeholder="ваше сообщение"></textarea>
-                                    <button type="submit" class="c-btn"> Отправить сообщение</button>
+                                    <textarea id="mesage" name="user_msg" placeholder="ваше сообщение"></textarea>
+                                    <button type="submit" class="c-btn" data-toggle="modal" data-target="#msgModal"> Отправить сообщение</button>
                                 </div>
                             </div>
                         </form>
+                        <div id="msgModal" class="modal" tabindex="-1">
+                          <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                              <div class="modal-header">
+                                <h5 class="modal-title">Заявка принята</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                  <span aria-hidden="true">&times;</span>
+                                </button>
+                              </div>
+                              <div class="modal-body">
+                                <p>Спасибо за заявку! <br> Мы скоро с Вами свяжемся </p>
+                              </div>
+                              <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal" style="background: #e16521;">Закрыть</button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -229,7 +249,7 @@
                 </div>
                 <div class="col-lg-3">
                     <div class="footer-widget">
-                        <h5>Связь с нами</h5>
+                        <h5>Как найти</h5>
                         <ul class="footer-info">
                             <li>
                                 <i class="fa fa-phone"></i>
@@ -239,7 +259,7 @@
                             <li>
                                 <i class="fa fa-telegram"></i>
                                 <span>Telegram:</span>
-                                 @telegram
+                                 @armiyaDerkach
                             </li>
                             <li>
                                 <i class="fa fa-map-marker"></i>
