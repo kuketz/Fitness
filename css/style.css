@@ -718,6 +718,21 @@ ol {
 	opacity: 1;
 }
 
+.modal-body ul {
+	color: black;
+	list-style-type: inherit;
+	font-family: "Nunito Sans", sans-serif;
+	padding: 0 10px;
+	font-weight: bold;
+}
+.modal-body li {
+	margin: 0 30px;
+	font-weight: 300;
+}
+.modal-body img {
+	float: right;
+	padding: 5px 5px;
+}
 /*
   Classes Time Table Section
 -----------------------*/
@@ -1115,146 +1130,6 @@ ol {
 }
 
 .video-section .video-text .play-btn:after {
-	position: absolute;
-	left: -5px;
-	top: -5px;
-	width: 70px;
-	height: 70px;
-	background: #ffffff;
-	opacity: 0.3;
-	border-radius: 50%;
-	content: "";
-}
-
-/*
-  Blog Section
------------------------*/
-
-.blog-section {
-	background: #dee2e6;
-	padding-top: 90px;
-	padding-bottom: 66px;
-}
-
-.blog-section .section-title {
-	margin-bottom: 55px;
-}
-
-.blog-item {
-	position: relative;
-	margin-bottom: 30px;
-}
-
-.blog-item:hover .play-btn {
-	opacity: 1;
-	visibility: visible;
-}
-
-.blog-item.large-item {
-	height: 420px;
-}
-
-.blog-item.large-item.xl-large {
-	height: 440px;
-}
-
-.blog-item.large-item.xls-large {
-	height: 460px;
-}
-
-.blog-item.large-item.m-item {
-	height: 400px;
-}
-
-.blog-item.small-item {
-	height: 260px;
-}
-
-.blog-item.sm-item {
-	height: 330px;
-}
-
-.blog-item.sms-item {
-	height: 320px;
-}
-
-.blog-item .blog-text {
-	position: absolute;
-	left: 0;
-	bottom: 0;
-	width: 100%;
-	padding-left: 30px;
-	padding-bottom: 30px;
-	padding-right: 30px;
-}
-
-.blog-item .blog-text .categories {
-	font-size: 14px;
-	color: #ffffff;
-	text-transform: uppercase;
-}
-
-.blog-item .blog-text h5 {
-	font-size: 20px;
-	color: #ffffff;
-	font-weight: 500;
-	margin-top: 10px;
-}
-
-.blog-item.instagram-item {
-	background: linear-gradient(to right, #e16521, #e4381C);
-	padding: 44px 30px 65px;
-}
-
-.blog-item.instagram-item .instagram-text {
-	display: block;
-}
-
-.blog-item.instagram-item .instagram-text .categories {
-	font-size: 14px;
-	color: #ffffff;
-	text-transform: uppercase;
-	position: relative;
-}
-
-.blog-item.instagram-item .instagram-text .categories i {
-	font-size: 20px;
-	position: absolute;
-	right: 0;
-	top: 0;
-}
-
-.blog-item.instagram-item .instagram-text h5 {
-	font-size: 20px;
-	color: #ffffff;
-	font-weight: 500;
-	margin-top: 10px;
-	text-transform: uppercase;
-	line-height: 1.5;
-}
-
-.blog-item .play-btn {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	height: 100%;
-}
-
-.blog-item .play-btn .play-in-btn {
-	display: inline-block;
-	height: 60px;
-	width: 60px;
-	font-size: 22px;
-	background: #ffffff;
-	text-align: center;
-	line-height: 62px;
-	color: #e4381C;
-	border-radius: 50%;
-	position: relative;
-	padding-left: 5px;
-}
-
-.blog-item .play-btn .play-in-btn:after {
 	position: absolute;
 	left: -5px;
 	top: -5px;
