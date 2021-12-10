@@ -24,6 +24,12 @@ $(document).ready(function()  {
           $('body,html').animate({scrollTop: top}, 2000);
       });
 
+      $(".workout-program").on("click","a", function (event) {
+          event.preventDefault();
+          var id  = $(this).attr('href'),
+              top = $(id).offset().top;
+          $('body,html').animate({scrollTop: top}, 2000);
+      });
         /*------------------
             Gallery filter
         --------------------*/
@@ -181,8 +187,10 @@ $(document).ready(function()  {
 
 
   $(document).ready(function() {
+    let isOpen = false;
       $("input:checkbox").change(function() {
-        var isOpen = $('.slider').addClass('.switch input:checked+.slider:before');
+        isOpen = !isOpen;
+        
         if (isOpen) {
             $(".price-plan").css("display", "none");
             $(".price-plan2").css("display", "block")
