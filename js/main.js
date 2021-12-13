@@ -4,7 +4,7 @@ $(document).ready(function()  {
       --------------------*/
       $(window).on('load', function () {
           $(".loader").fadeOut();
-          $("#preloder").delay(800).fadeOut("fast");
+          $("#preloder").delay(400).fadeOut("fast");
 
 
       /*------------------
@@ -91,22 +91,9 @@ $(document).ready(function()  {
         navText: ['<i class="arrow_carrot-left"></i>', '<i class="arrow_carrot-right"></i>'],
         smartSpeed: 1200,
         autoHeight: false,
-    });
-
-    /*------------------
-        Testimonial Slider
-    --------------------*/
-   $(".testimonial-slider").owlCarousel({
-        loop: true,
-        margin: 0,
-        nav: false,
-        items: 1,
-        dots: true,
-        navText: ['<i class="arrow_carrot-left"></i>', '<i class="arrow_carrot-right"></i>'],
-        smartSpeed: 1200,
-        autoHeight: false,
         autoplay: true,
     });
+
 
     /*------------------
         Magnific Popup
@@ -126,38 +113,19 @@ $(document).ready(function()  {
         Modal
     --------------------*/
 
-   //  $(document).ready(function() {
-   //    $( "#dialog" ).dialog({
-   //      autoOpen: false,
-   //      show: {
-   //        effect: "slide",
-   //        duration: 1000
-   //      },
-   //      hide: {
-   //        effect: "fold",
-   //        duration: 1000
-   //      },
-   //      buttons: {
-   //      "Ок": function() {
-   //          $( this ).dialog( "close" );
-   //          $( "#opener" ).css("visibility","visible");
-   //        }
-   //      }
-   //  });
-   //    $( "#dialog" ).dialog("option", "width", 335);
-   //    $( "#opener" ).on( "click", function() {
-   //        $( "#dialog" ).dialog( "open" );
-   //        $( "#opener" ).css("visibility","hidden");
-   //    });
-   //    });
+   // $('#first_form').on('submit', function(e) {
+   //   e.preventDefault(); //stop submit
+   //   if ($('#myCheck').is(':checked')) {
+   //      $('#msgModal').modal('show');
+   //   }
+   //   $('#first_form').trigger('reset');
    // });
+   //
 
-   $("#opener").click(function(e){
-     e.preventDefault();
-      $('#first_form').trigger('reset');
-   });
-
-
+ //   $('#first_form').submit(function () {
+ //     e.preventDefault();
+ //    $('#first_form').trigger('reset');
+ // });
     /*------------------
        Timetable Filter
     --------------------*/
@@ -190,7 +158,7 @@ $(document).ready(function()  {
     let isOpen = false;
       $("input:checkbox").change(function() {
         isOpen = !isOpen;
-        
+
         if (isOpen) {
             $(".price-plan").css("display", "none");
             $(".price-plan2").css("display", "block")
