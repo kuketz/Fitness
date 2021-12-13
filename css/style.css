@@ -51,7 +51,7 @@ p {
 }
 
 img {
-	max-width: 150px;
+	max-width: 100px;
 }
 
 input:focus,
@@ -216,12 +216,14 @@ ol {
 }
 
 .invalid {
-	border:1px solid #F5192F;
-	box-shadow:0 0 4px #F5192F;
+
+	color: #ff0000!important;
+	box-shadow: 0px 0px 14px 3px rgba(255,117,117,1);
 }
 .valid {
-	border: 1px solid #64C364;
-	box-shadow: 0 0 4px #64C364;
+	
+	color: #2b9400!important;
+	box-shadow: 0px 0px 14px 3px rgba(0,138,12,1);
 }
 
 /* Preloder */
@@ -269,7 +271,7 @@ ol {
 -----------------------*/
 
 .header-section {
-	padding-top: 40px;
+	padding-top: 60px;
 	position: absolute;
 	left: 0;
 	top: 0;
@@ -287,7 +289,8 @@ ol {
 }
 
 .header-section.header-normal .logo{
-	padding: 20px 0;
+	padding: 10px 0;
+	margin: 0;
 }
 
 .header-section.header-normal .nav-menu .mainmenu ul li a {
@@ -320,7 +323,7 @@ ol {
 }
 .logo {
 	float: left;
-
+	margin-top: -25px;
 }
 
 .logo a {
@@ -869,6 +872,7 @@ ol {
 	font-weight: 500;
 	text-transform: uppercase;
 	transition: all 0.3s;
+	font-size: 15px;
 }
 
 /*
@@ -1260,7 +1264,7 @@ ol {
 	height: 40px;
 	margin-bottom: 20px;
 	font-size: 16px;
-	color: #272727;
+	color: #00000;
 	border: 1px solid #e1e1e1;
 	padding-left: 20px;
 	border-radius: 2px;
@@ -1358,7 +1362,9 @@ ol {
 	display: block;
 	margin-bottom: 20px;
 }
-
+.footer-widget .footer-blog img {
+	max-width: 150px;
+}
 .footer-widget .footer-blog .fb-item:hover h6 {
 	color: #e4381C;
 }
@@ -1544,80 +1550,6 @@ ol {
 	margin-right: 9px;
 }
 
-/*
-  Testimonial Section
------------------------*/
-
-.testimonial-section {
-	padding-bottom: 130px;
-}
-
-.testimonial-slider .ts-item {
-	text-align: center;
-}
-
-.testimonial-slider .ts-item .rating {
-	margin-bottom: 16px;
-}
-
-.testimonial-slider .ts-item .rating i {
-	font-size: 20px;
-	color: #ffca04;
-	display: inline-block;
-}
-
-.testimonial-slider .ts-item h4 {
-	color: #ffffff;
-	line-height: 34px;
-	font-family: "Nunito Sans", sans-serif;
-	margin-bottom: 20px;
-}
-
-.testimonial-slider .ts-item .author-name {
-	margin-bottom: 28px;
-}
-
-.testimonial-slider .ts-item .author-name h5 {
-	color: #ffffff;
-	font-weight: 500;
-	margin-bottom: 4px;
-}
-
-.testimonial-slider .ts-item .author-name span {
-	display: inline-block;
-	color: #ffffff;
-}
-
-.testimonial-slider .ts-item .author-pic img {
-	height: 60px;
-	width: 60px;
-	border-radius: 50%;
-	margin: 0 auto;
-}
-
-.testimonial-slider .owl-dots {
-	text-align: center;
-	position: absolute;
-	left: 0;
-	bottom: -41px;
-	width: 100%;
-}
-
-.testimonial-slider .owl-dots button.owl-dot {
-	height: 4px;
-	width: 20px;
-	background: #ffffff;
-	border-radius: 50px;
-	margin-right: 10px;
-}
-
-.testimonial-slider .owl-dots button.owl-dot.active {
-	background: #e4381C;
-}
-
-.testimonial-slider .owl-dots button.owl-dot:last-child {
-	margin-right: 0;
-}
 
 /*
   Trainer Section
@@ -1984,7 +1916,7 @@ ol {
 	padding-left: 20px;
 	margin-bottom: 30px;
 	font-size: 16px;
-	color: #a6a6a6;
+	color: black;
 	transition: 0.3s;
 	border: 1px solid #131313;
 }
@@ -1995,7 +1927,7 @@ ol {
 
 .contact-form form input:focus {
 	background: #ffffff;
-	color: #151515;
+	color: black;
 	font-weight: 600;
 }
 
@@ -2044,6 +1976,7 @@ ol {
 	.container {
 		max-width: 1200px;
 	}
+
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
@@ -2100,7 +2033,9 @@ ol {
 	.recent-item {
 		margin-bottom: 30px;
 	}
-
+	.footer-section .col-lg-3 {
+		width: 50%;
+	}
 }
 /* Media : 480px */
 
@@ -2242,6 +2177,7 @@ ol {
 	}
 	.header-section.header-normal .logo {
 		padding: 18px 0 5px;
+
 	}
 	.single-hero-item .hero-text h1 {
 		font-size: 50px;
@@ -2278,5 +2214,8 @@ ol {
 	}
 	.contact-map .map-hover {
 		left: 15%;
+	}
+	.footer-section .col-lg-3 {
+		width: 100%;
 	}
 }
