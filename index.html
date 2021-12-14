@@ -88,7 +88,7 @@
                 </div>
             </div>
         </div>
-        <div class="single-hero-item set-bg" data-setbg="img/hero-slider/247376125.jpg">
+        <div class="single-hero-item set-bg" data-setbg="img/hero-slider/hero-6.jpg">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12">
@@ -110,7 +110,7 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col-md-4">
-                <div class="feature-item set-bg" data-setbg="img/feature/feature-1.png">
+                <div class="feature-item set-bg" data-setbg="img/feature/IMG_0419.jpeg">
                     <h3>Fitness Mix</h3>
                     <p>комплекс кардио-силовых упражнений</p>
                     <a href="#" class="primary-btn f-btn" data-toggle="modal" data-target="#Modalfirst">Читать далее</a>
@@ -137,7 +137,7 @@
                 </div>
             </div>
             <div class="col-md-4">
-                <div class="feature-item set-bg" data-setbg="img/feature/feature-2.jpg">
+                <div class="feature-item set-bg" data-setbg="img/feature/feature-5.jpg">
                     <h3>TRX</h3>
                     <p> вид тренировок с использованием специальной системы подвесных петель. </p>
                     <a href="#" class="primary-btn f-btn" data-toggle="modal" data-target="#Modalsecond">Читать далее</a>
@@ -164,7 +164,7 @@
             </div>
 
             <div class="col-md-4">
-                <div class="feature-item set-bg" data-setbg="img/feature/feature-3.jpg">
+                <div class="feature-item set-bg" data-setbg="img/feature/feature-6.jpg">
                     <h3>Power</h3>
                     <p>силовая тренировка, направленная на проработку всех мышечных групп с акцентом на проблемные зоны.</p>
                     <a href="#" class="primary-btn f-btn" data-toggle="modal" data-target="#Modalthird">Читать далее</a>
@@ -237,7 +237,7 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col-lg-3 col-sm-6">
-                <div class="classes-item set-bg" loading="lazy" data-setbg="img/classes/img_1000_2.jpg">
+                <div class="classes-item set-bg" loading="lazy" data-setbg="img/classes/silov_1.png">
                     <h4>Силовые упражнения</h4>
                     <p>Вид силовой тренировки в аэробном режиме с использованием веса собственного тела, а также свободных отягощений. </p>
                     <a href="#" class="primary-btn class-btn" data-toggle="modal" data-target="#Modal1">Ознакомиться</a>
@@ -754,7 +754,7 @@
 <!-- Choseus Section End -->
 
 <!-- Video Section Begin -->
-<section class="video-section set-bg" data-setbg="img/video-bg.jpg">
+<section class="video-section set-bg" data-setbg="img/v-bg.jpg">
     <div class="container">
         <div class="row">
             <div class="col-lg-12">
@@ -806,7 +806,7 @@
             <h5>Свяжитесь с нами</h5>
             <form id="first_form" action="" method="POST" onsubmit="$('#msgModal').modal('show'); $('#first_form').trigger('reset'); return false">
                 <input type="text" id="first_name" name="user_name" placeholder="Имя*">
-                <input type="text" id="phone" class="phone" name="user_phone" placeholder="телефон* "  maxlength="13" required>
+                <input type="text" id="phone" class="phone" name="user_phone" placeholder="телефон* " minlength="9" maxlength="13" >
                 <textarea id="mesage" type="text" name="user_msg" placeholder="ваше сообщение"></textarea>
                 <button id="opener" type="submit" onClick="ValidPhone(); ValidName();" class="site-btn" >Отправить</button>
             </form>
