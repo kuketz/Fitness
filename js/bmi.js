@@ -1,7 +1,5 @@
 jQuery(function($){
 
-// Настройки
-
     // ИМТ мужской, ИМТ женский, Соответствие между массой человека и его ростом
     text = [
         ['16 и менее', '16 и менее', 'Дефицит массы'],
@@ -34,7 +32,7 @@ jQuery(function($){
 
         var imt = weight/(Math.pow((height/100), 2));
 
-        if (sex == 1) {
+        if (sex == true) {
 
             if (imt < 16) index = 0;
             else if (imt >= 16 && imt < 18.5) index = 1;
@@ -56,7 +54,7 @@ jQuery(function($){
 
         }
 
-        var table = '<div class="imtcalc_result_text"><span>Ваш результат</span><span>'+Math.round10(imt, -2)+'</span></div>';
+        var table = '<div class="imtcalc_result_text"><span>Ваш результат</span><span>'+Math.round10(imt, -2)+' кг/м² </span>  </div>';
 
         text.forEach(function(item, i){
             if (i == index) active = ' class="imtcalc_active"';
