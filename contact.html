@@ -68,9 +68,9 @@
         <div class="map-hover">
             <h5>Дружковка</h5>
             <ul>
-                <li>Будни: 08.00 - 20.00</li>
-                <li>Суббота: 08.30 - 17.00</li>
-                <li>Воскресенье: Выходной</li>
+                <li>Будни: 10.00 - 23.00</li>
+                <li>Суббота: 10.00 - 23.00</li>
+                <li>Воскресенье: Закрыто</li>
             </ul>
             <i class="icon_pin"></i>
         </div>
@@ -105,11 +105,11 @@
                         <form id="first_form" action="" method="POST" onsubmit="$('#msgModal').modal('show'); $('#first_form').trigger('reset'); return false">
                             <div class="row">
                                 <div class="col-lg-6">
-                                    <input type="text" id="first_name" name="user_name" placeholder="Имя" >
+                                    <input type="text" id="first_name" name="user_name" placeholder="Имя" required>
                                 </div>
                                 <div class="col-lg-6">
                                     <!-- <input type="text" id="email" name="user_mail" placeholder="эл. почта:" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required onclick="regClick()"> -->
-                                    <input type="text" id="phone" class="phone" name="user_phone" placeholder="(xxx) xx-xx-xxx" minlength="9" maxlength="13">
+                                    <input type="text" id="phone" class="phone" name="user_phone" placeholder="(xxx) xx-xx-xxx" minlength="9" maxlength="13" required>
                                 </div>
 
                                 <div class="col-lg-12">
@@ -291,19 +291,19 @@ function ValidPhone() {
     return valid;
 }
 function ValidName() {
-    var reg = /^[a-zA-Zа-яА-Я]+$/ui;
+    var reg = /^[a-zA-Zа-яА-Я]+$/;
     var myName = document.getElementById('first_name').value;
     var name = document.getElementById('first_name');
     var validName = reg.test(myName);
-
-    if (validName) {
+    if (myName.match(/^\w+/)) {
         name.classList.add('valid');
         name.classList.remove('invalid');
+
     } else {
         name.classList.add('invalid');
         name.classList.remove('valid');
+
     }
-    return validName;
 }
 </script>
     <!-- Js Plugins -->

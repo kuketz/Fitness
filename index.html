@@ -805,8 +805,8 @@
         <div class="map-contact-form">
             <h5>Свяжитесь с нами</h5>
             <form id="first_form" action="" method="POST" onsubmit="$('#msgModal').modal('show'); $('#first_form').trigger('reset'); return false">
-                <input type="text" id="first_name" name="user_name" placeholder="Имя*">
-                <input type="text" id="phone" class="phone" name="user_phone" placeholder="телефон* " minlength="9" maxlength="13" >
+                <input type="text" id="first_name" name="user_name" placeholder="Имя*" required>
+                <input type="text" id="phone" class="phone" name="user_phone" placeholder="телефон* " minlength="9" maxlength="13" required>
                 <textarea id="mesage" type="text" name="user_msg" placeholder="ваше сообщение"></textarea>
                 <button id="opener" type="submit" onClick="ValidPhone(); ValidName();" class="site-btn" >Отправить</button>
             </form>
