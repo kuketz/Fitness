@@ -3,8 +3,8 @@ $(document).ready(function()  {
           Preloader
       --------------------*/
       $(window).on('load', function () {
-          $(".loader").fadeOut();
-          $("#preloder").delay(400).fadeOut("fast");
+          $(".preloader__image").fadeOut();
+          $("#preloder").delay(800).fadeOut("slow");
 
 
       /*------------------
@@ -167,5 +167,6 @@ $(document).ready(function()  {
             $(".price-plan").css("display", "block");
         }
       });
-
   })
+
+// $('#first_form').trigger('reset');

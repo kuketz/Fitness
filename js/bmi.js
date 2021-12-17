@@ -20,7 +20,24 @@ jQuery(function($){
 
 // Функции
 
-    function decimal_adjust(t,v,e){if(typeof e==='undefined'||+e===0){return Math[t](v)}v=+v;e=+e;if(isNaN(v)||!(typeof e==='number'&&e%1===0)){return NaN}v=v.toString().split('e');v=Math[t](+(v[0]+'e'+(v[1]?(+v[1]-e):-e)));v=v.toString().split('e');return +(v[0]+'e'+(v[1]?(+v[1]+e):e))}if(!Math.round10){Math.round10=function(v,e){return decimal_adjust('round',v,e)}}
+    function decimal_adjust(t,v,e){
+      if(typeof e==='undefined'||+e===0){
+        return Math[t](v)
+      } v=+v;
+        e=+e;
+      if(isNaN(v)||!(typeof e==='number'&&e%1===0)){
+        return NaN
+      }
+        v=v.toString().split('e');
+        v=Math[t](+(v[0]+'e'+(v[1]?(+v[1]-e):-e)));
+        v=v.toString().split('e');
+        return +(v[0]+'e'+(v[1]?(+v[1]+e):e))
+      } if(!Math.round10){
+        Math.round10=function(v,e)
+      {
+      return decimal_adjust('round',v,e)
+        }
+      }
 
     function calculate() {
         var e = event || window.event;
